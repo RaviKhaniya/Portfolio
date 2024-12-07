@@ -8,7 +8,6 @@ import Footer from "@/Components/Footer";
 import Approach from "@/Components/Approach";
 import Experience from "@/Components/Experience";
 import RecentProjects from "@/Components/RecentProject";
-import { FloatingNav } from "@/Components/ui/FLoatingNav";
 const FloatingNav = dynamic(async () => {
   const module = await import("@/Components/ui/FLoatingNav");
   return module.FloatingNav;
