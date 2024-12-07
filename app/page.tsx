@@ -5,7 +5,6 @@ import { navItems } from "@/Data";
 import Hero from "@/Components/Hero";
 import Grid from "@/Components/Grid";
 import Footer from "@/Components/Footer";
-import Clients from "@/Components/Clients";
 import Approach from "@/Components/Approach";
 import Experience from "@/Components/Experience";
 import RecentProjects from "@/Components/RecentProject";
