@@ -5,6 +5,9 @@ import MagicButton from './MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
+  const handleButtonClick = () => {
+    console.log('Button clicked!');
+  };
   return (
     <div className='pb-20 pt-36 '>
        <div>
@@ -27,7 +30,7 @@ const Hero = () => {
             Hello, im Ravi Khaniya Computer engineering student currently in 3rd semester
             </p>
             <a href="#about">
-            <MagicButton  title = "Show my work" icon = {<FaLocationArrow/>}  position='right'/>
+            <MagicButton  title = "Show my work" icon = {<FaLocationArrow/>}  position='right' handleClick={handleButtonClick}/>
             </a>
             
         </div>
