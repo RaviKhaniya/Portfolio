@@ -9,9 +9,10 @@ import Approach from "@/Components/Approach";
 import Experience from "@/Components/Experience";
 import RecentProjects from "@/Components/RecentProject";
 const FloatingNav = dynamic(async () => {
-  const module = await import("@/Components/ui/FLoatingNav");
-  return module.FloatingNav;
+  const importedModule = await import("@/Components/ui/FLoatingNav");
+  return importedModule.FloatingNav;
 }, { ssr: false });
+
 const Home = () => {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
